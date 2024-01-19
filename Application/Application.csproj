@@ -6,4 +6,19 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="EntityFrameworkCore.Query" Version="1.3.1.2" />
+    <PackageReference Include="MediatR" Version="12.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Persistance">
+      <HintPath>..\Persistance\bin\Debug\net7.0\Persistance.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
